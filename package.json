@@ -1,0 +1,22 @@
+{
+  "name": "@tagplay/asset-identifier",
+  "version": "0.0.0",
+  "description": "Handles prefixes and encoding of tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagplay/asset-identifier.git"
+  },
+  "author": "Fannar Snær <fannar@lambagras.is>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tagplay/asset-identifier/issues"
+  },
+  "homepage": "https://github.com/tagplay/asset-identifier#readme",
+  "dependencies": {
+    "base64url": "^2.0.0"
+  }
+}
