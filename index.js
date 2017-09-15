@@ -16,9 +16,10 @@ function prefix(serviceName) {
 function tags(opts) {
   return Object.keys(opts)
     .map(function(key) {
-      if (key === 'id') return base64url(opts[key]);
-      if (key === 'to') return 't~' + base64url(opts[key]);
-      if (key === 'from') return 'f~' + base64url(opts[key]);
+      if (!opts[key]) return;
+      if (key === 'id') return base64url(String(opts[key]));
+      if (key === 'to') return 't~' + base64url(String(opts[key]));
+      if (key === 'from') return 'f~' + base64url(String(opts[key]));
       // return key + '~' + opts[key];
     })
     .filter(Boolean);
